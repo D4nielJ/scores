@@ -1,4 +1,4 @@
-# Microverse Template using Webpack
+# Scores Leaderboard
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 ![](https://img.shields.io/badge/Academic-blue)
@@ -6,7 +6,7 @@
 ![](https://img.shields.io/badge/JavaScript-yellow)
 ![](https://img.shields.io/badge/SCSS-green)
 
-Add description here.
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## Live Demo
 
