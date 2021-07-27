@@ -1,4 +1,3 @@
-export default function fetchData(data = []) {
-  const loadedData = data;
-  return loadedData;
-}
+const fetchData = (data = []) => data;
+
+export default fetchData;

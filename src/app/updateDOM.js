@@ -1,4 +1,4 @@
-export default function updateDOM(data) {
+const updateDOM = (data) => {
   const table = document.querySelector('tbody');
   data.forEach((player) => {
     const row = document.createElement('tr');
@@ -9,4 +9,6 @@ export default function updateDOM(data) {
     </tr>`;
     table.appendChild(row);
   });
-}
+};
+
+export default updateDOM;
