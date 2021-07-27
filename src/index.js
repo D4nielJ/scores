@@ -1,3 +1,4 @@
 import './css/main.css';
+import run from './app/run.js';
 
-console.log('hello-world');
+window.onload = run;
