@@ -1,5 +1,5 @@
 import fetchData from './fetchData.js';
-import { data } from './data.js';
+import data from './data.js';
 import updateDOM from './updateDOM.js';
 
 export default function run() {

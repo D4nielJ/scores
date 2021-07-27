@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     name: 'Jhon',
     score: 100,
@@ -15,4 +15,6 @@ export const data = [
     name: 'Elias',
     score: 0,
   },
-]
+];
+
+export default data;
