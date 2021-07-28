@@ -6,7 +6,7 @@ import submit from './submit.js';
 const run = async () => {
   const loadedData = await fetchData();
   updateDOM(loadedData);
-  refresh(loadedData, updateDOM);
+  refresh(fetchData, updateDOM);
   submit();
 };
 
