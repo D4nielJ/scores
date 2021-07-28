@@ -1,12 +1,11 @@
 const submit = (fetchData, updateDOM) => {
   const form = document.querySelector('form');
   form.addEventListener('submit', async (e) => {
-    // Fetch the data to the API
     e.preventDefault();
     const user = form.name.value;
     const score = form.score.value;
     await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gagYyMmW80J2RAQLFXbE/scores/',
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9YugNr0GKrJIfPey1hC9/scores/',
       {
         method: 'POST',
         body: JSON.stringify({
