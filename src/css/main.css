@@ -1,6 +1,10 @@
 body {
-  color: lightseagreen;
-  background-color: black;
+  color: white;
+  background-color: #0a111f;
+}
+
+.form-floating {
+  color: #707070;
 }
 
 /*# sourceMappingURL=main.css.map */
