@@ -10,7 +10,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Live Demo
 
-* [Live Demo](https://zealous-heyrovsky-c6c3cc.netlify.app/)
+* [Live Demo](https://61010a998db09200077ee4f1--zealous-heyrovsky-c6c3cc.netlify.app/)
 
 ## Getting Started
 **Install**
