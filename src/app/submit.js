@@ -9,8 +9,8 @@ const submit = (fetchData, updateDOM) => {
       {
         method: 'POST',
         body: JSON.stringify({
-          user: user,
-          score: score
+          user,
+          score,
         }),
         headers: {
           'Content-type': 'application/json; charset=UTF-8',

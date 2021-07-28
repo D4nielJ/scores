@@ -1,6 +1,6 @@
 const updateDOM = (data) => {
   const table = document.querySelector('tbody');
-  table.innerHTML= ``;
+  table.innerHTML = '';
   data.forEach((player) => {
     const row = document.createElement('tr');
     row.innerHTML = `
