@@ -1,4 +1,4 @@
-const submit = () => {
+const submit = (fetchData, updateDOM) => {
   const form = document.querySelector('form');
   form.addEventListener('submit', async (e) => {
     // Fetch the data to the API
@@ -19,6 +19,8 @@ const submit = () => {
       },
     );
     form.reset();
+    const loadedData = await fetchData();
+    updateDOM(loadedData);
   });
 };
 

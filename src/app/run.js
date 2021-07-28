@@ -7,7 +7,7 @@ const run = async () => {
   const loadedData = await fetchData();
   updateDOM(loadedData);
   refresh(fetchData, updateDOM);
-  submit();
+  submit(fetchData, updateDOM);
 };
 
 export default run;
