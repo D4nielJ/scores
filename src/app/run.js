@@ -1,10 +1,12 @@
 import fetchData from './fetchData.js';
-import data from './data.js';
 import updateDOM from './updateDOM.js';
+import refresh from './refresh.js';
 
-const run = () => {
-  const loadedData = fetchData(data);
+const run = async () => {
+  const loadedData = await fetchData();
   updateDOM(loadedData);
+  refresh(loadedData, updateDOM);
+  submit();
 };
 
 export default run;
