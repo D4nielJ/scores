@@ -1,6 +1,9 @@
+import sortData from './sortData.js';
+
 const updateDOM = (data) => {
   const table = document.querySelector('tbody');
   table.innerHTML = '';
+  data = sortData(data);
   data.forEach((player) => {
     const row = document.createElement('tr');
     row.innerHTML = `

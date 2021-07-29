@@ -4,10 +4,10 @@ import refresh from './refresh.js';
 import submit from './submit.js';
 
 const run = async () => {
-  const loadedData = await fetchData();
-  updateDOM(loadedData);
   refresh(fetchData, updateDOM);
   submit(fetchData, updateDOM);
+  const loadedData = await fetchData();
+  updateDOM(loadedData);
 };
 
 export default run;

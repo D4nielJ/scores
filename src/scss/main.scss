@@ -1,10 +1,107 @@
+@charset 'utf-8';
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+$primary: #fca311;
+$dark: #0a111f;
+$danger: #192a4d;
 // https://coolors.co/000000-0a111f-7494d2-fca311-e5e5e5-ffffff
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+
+// 4. Include any optional Bootstrap components as you like
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/images';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/forms';
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/tables';
+@import 'vendor/include-media';
 
 body {
   color: white;
   background-color: #0a111f;
+  min-height: 98vh;
+  position: relative;
+}
+
+.btn-light {
+  color: #0a111f;
+}
+
+.title {
+  background-color: $primary;
+
+  &__h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
 }
 
 .form-floating {
   color: #707070;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.table {
+  @include media('>tablet') {
+    margin-bottom: 7rem;
+  }
+}
+
+.form-container {
+  margin-bottom: 4rem;
+}
+
+.validation {
+  background-color: $primary;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  opacity: 0;
+  position: absolute;
+  top: -0.5rem;
+  visibility: hidden;
+  transition:
+    position 0s,
+    visibility 0s,
+    opacity 250ms ease-in-out,
+    top 250ms ease-in-out;
+
+  &--active {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 0;
 }
