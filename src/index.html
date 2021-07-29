@@ -24,16 +24,11 @@
           <h2>Leaderboard</h2>
         </div>
         <div class="col-12 col-md-5">
-          <div class="list__header d-flex justify-content-between">
-            <h3 class="mb-3">Recent Scores</h3>
-            <div class="btn-group">
-              <button class="btn btn-refresh btn-primary mb-3" type="button">
-                <i class="fas fa-sync-alt"></i>
-              </button>
-              <button class="btn btn-refresh btn-primary mb-3" type="button">
-                <i class="fas fa-file"></i>
-              </button>
-            </div>
+          <div class="list__header mb-3 d-flex justify-content-between">
+            <h3>Recent Scores</h3>
+            <button class="btn btn-refresh btn-primary" type="button">
+              <i class="fas fa-sync-alt"></i>
+            </button>
           </div>
           <table class="table table-dark table-striped">
             <thead>
@@ -62,7 +57,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
-                type="number"
+                type="text"
                 class="form-control"
                 id="score"
                 placeholder="Enter your score"
