@@ -1,12 +1,58 @@
-// https://coolors.co/000000-0a111f-7494d2-fca311-e5e5e5-ffffff
+@charset 'utf-8';
 
-$primary-color: #fca311;
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$primary: #fca311;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
+
+
+// 4. Include any optional Bootstrap components as you like
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/tables";
+
 
 body {
   color: white;
   background-color: #0a111f;
+  min-height: 100vh;
+  position: relative;
 }
 
 .form-floating {
   color: #707070;
 }
+
+.table {
+  margin-bottom: 7rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 0;
+}
+
+
+
+
+// https://coolors.co/000000-0a111f-7494d2-fca311-e5e5e5-ffffff
