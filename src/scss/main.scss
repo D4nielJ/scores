@@ -24,8 +24,7 @@ $danger: #192a4d;
 @import '../../node_modules/bootstrap/scss/forms';
 @import '../../node_modules/bootstrap/scss/buttons';
 @import '../../node_modules/bootstrap/scss/tables';
-
-@import 'include-media.scss';
+@import 'vendor/include-media';
 
 body {
   color: white;
@@ -80,7 +79,10 @@ input[type='number'] {
   position: absolute;
   top: -0.5rem;
   visibility: hidden;
-  transition: position 0s, visibility 0s, opacity 250ms ease-in-out,
+  transition:
+    position 0s,
+    visibility 0s,
+    opacity 250ms ease-in-out,
     top 250ms ease-in-out;
 
   &--active {

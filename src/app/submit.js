@@ -20,7 +20,7 @@ const submit = (fetchData, updateDOM) => {
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
-      }
+      },
     );
     form.reset();
     validation.classList.remove('validation--active');

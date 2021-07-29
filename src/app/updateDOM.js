@@ -1,4 +1,4 @@
-import sortData from "./sortData";
+import sortData from './sortData';
 
 const updateDOM = (data) => {
   const table = document.querySelector('tbody');
